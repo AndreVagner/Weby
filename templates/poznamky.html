@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uložené poznámky</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="\static\styles\custom.css" type="text/css">
+
+<style>
+
+</style>
+</head>
+
+<div class="box">
+	<a class="button" href="#popup1">Nápověda</a>
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Nápověda</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			Lze zapsat maximálně 250 znaků, a minimálně 1 znak, pro uložení poznámky klikněte na uložit poznámku. Tlačítko uložené poznámky Vás přesune zpět na hlavní stránku. Důležitost je rozdělená na 3 stupně - málo důležitá (zelená), středně důležitá (modrá) a důležitá (červená)
+		</div>
+	</div>
+</div>
+
+<div class="formular">
+    <h1>Zapište poznámku</h1>
+    <form method="POST">
+        {{ form.csrf_token }}
+        <div class="formular1">
+        {{ form.poznamka() }}
+        <br><br><br><br>
+        {{ form.dulezitost() }}
+        
+        </div>
+        <p class="blink"> {{ error }}</p>
+        <input type="checkbox" onclick="this.form.submit(5000);" id="switch" name="switch" unchecked="">
+        <label for="switch" class="switch-label">
+        </label>
+    </form>
+    <form action="/">
+        <input type="submit" class="switch-label1" value="Uložené poznámky">
+    </form>
+</div>
+<img class="obr" src="\static\img\obr2.png">
+
+
+
+
+
+
+</body>
+</html>

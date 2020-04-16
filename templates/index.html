@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Poznámky</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="\static\styles\custom.css" type="text/css">
+
+</head>
+
+<h3>Uložené poznámky</h3>
+<form action="/poznamka/vlozit">
+    <input class="vytvorit" type="submit" value="Vytvořit poznámku"/>
+
+</form>
+<div class="row">
+<div id 'nevim'>
+    <br><br><br><br><br>
+    {% for poznamky in poznamky %}
+    <div class="column" {% if poznamky[3]==1 %}style="border-color:green;"{% endif %} 
+                        {% if poznamky[3]==2 %}style="border-color:blue;"{% endif %}
+                        {% if poznamky[3]==3 %}style="border-color:red;"{% endif %} >
+        <li class="text">{{poznamky[1]}}</li>
+    </div>
+        <li1 class="text2">{{poznamky[2]}}<li1>
+            
+     <td><a href="/smaz/{{ poznamky[0] }}" class="odkaz">Smazat poznámku</a> <a href="/uprav/{{ poznamky[0] }}"class="odkaz2">Upravit</a></td></td>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   {% endfor %} 
+</div>
+</div>
+
+</head>
+</html>

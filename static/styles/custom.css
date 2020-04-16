@@ -1,0 +1,327 @@
+body{
+  background-color: #1e2328;
+  text-align: left;
+}
+h1{
+  text-align: center;
+}
+h3{
+  font-family: Georgia;
+  color: #f0e6d2;
+  font-size: 30px;
+  text-align: center;
+}
+a {
+  position: absolute;
+  font-size: 50px;
+  margin-left: 15em; 
+  margin-top: -4em; 
+}
+.formular{
+  width: 400px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin-left: 39%;
+  background-color: #f0e6d2;
+}
+
+.formular1{
+  height: 100%;
+}
+.vytvorit{
+  display: inline-block;
+  width: 50%;
+  max-width: 160px;
+  background-color: Maroon;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.09s;
+  border-radius: 3px;
+}
+
+.barline{width:150px;height:20px;border:1px solid #555;}
+.barline .inner{background:blue;color:#fff;text-align:right;}
+
+.text{
+  font-size: 20px;
+  color: black;
+}
+
+.text2{
+  font-size: 20px;
+  color: black;
+  margin-left: -172px;
+}
+.blink{
+  animation: blinker 2s linear infinite;
+  color: #c91c1c;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+  @keyframes blinker {  
+  50% { opacity: 0; }
+}
+.form textarea#Poznámka {
+  width: 100px;
+  height: 100px;
+  max-width: 100px;
+}
+  
+
+.column {
+  float: left;
+  padding: 10px;
+  word-wrap: break-word;
+  background-image: linear-gradient(#fdf8c8, #fdf8c8 23px, #ccd 23px, #ccd 24px, #fdf8c8 24px);
+  background-size:100% 24px;
+  background-position: left 0px;
+  background-repeat: repeat;
+  line-height: 24px !important;
+  background-attachment: local;
+  width: 370px; 
+  height: 340px;
+  border-radius: 5px;
+  border-color: chartreuse;
+  border-style: solid;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+    box-sizing: border-box;
+}
+textarea{
+  background-image: linear-gradient(90deg, #fdf8c8 1px, #fdf8c8 1px), linear-gradient(#fdf8c8, #fdf8c8 23px, #ccd 23px, #ccd 24px, #fdf8c8 24px);
+  background-size: 2px 100%, 100% 24px;
+  background-position: left 0px;
+  background-repeat: no-repeat, repeat;
+  line-height: 24px !important;
+  background-attachment: local;
+  width: 370px; 
+  height: 350px;
+  max-width: 370px; 
+  max-height: 340px; 
+  min-width: 370px;
+  min-height: 340px;
+}
+
+.obr{
+position: fixed;
+margin-top: -400px;
+margin-left: 250px;
+}
+a {
+ margin-left: 200px;
+ margin-top: 100px;
+}
+li {
+  margin-top: 18px;
+  list-style-type:none;
+}
+#switch {
+  display: none;
+}
+
+.switch-label {
+  min-height: 1rem;
+  position: absolute;
+  bottom: 485px;
+  left: 950px;
+  z-index: 9999;
+  display: inline-block;
+  cursor: pointer;
+  background: #ccc;
+  color: #111;
+  padding: .75vh 1rem;
+  margin-top: 1.5vh;
+  -webkit-box-shadow: 0 1px 3px 0 #666;
+  box-shadow: 0 1px 3px 0 #666;
+}
+.switch-label1 {
+  min-height: 1rem;
+  position: absolute;
+  bottom: 485px;
+  z-index: 9999;
+  display: inline-block;
+  cursor: pointer;
+  background: #ccc;
+  color: #111;
+  padding: .75vh 1rem;
+  margin-top: 1.5vh;
+  -webkit-box-shadow: 0 1px 3px 0 #666;
+  box-shadow: 0 1px 3px 0 #666;
+  font-family: Basic, sans-serif;
+  color: #1e1610;
+}
+.switch-label2 {
+  min-height: 1rem;
+  position: absolute;
+  bottom: 550px;
+  left: 500px;
+  z-index: 9999;
+  display: inline-block;
+  cursor: pointer;
+  background: #ccc;
+  color: #111;
+  padding: .75vh 1rem;
+  margin-top: 1.5vh;
+  -webkit-box-shadow: 0 1px 3px 0 #666;
+  box-shadow: 0 1px 3px 0 #666;
+  font-family: Basic, sans-serif;
+  color: #1e1610;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  -webkit-box-shadow: 0 0 0 #000;
+  box-shadow: 0 0 0 #000;
+}
+label {
+  cursor: default;
+}
+
+html {
+  color: -internal-root-color;
+}
+.switch-label:before {
+  content: " ";
+  display: inline-block;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background: #af8400;
+  margin-right: 10px;
+  border: 1px solid #111;
+  -webkit-animation: glow 60s infinite;
+  animation: glow 60s infinite;
+  -webkit-box-shadow: 0 0 2rem 0 #af8400;
+  box-shadow: 0 0 2rem 0 #af8400;
+}
+
+.switch-label:after {
+  content: "Uložit poznámku";
+  font-family: Basic, sans-serif;
+  color: #1e1610;
+}
+#switch:checked + .switch-label:before {
+  background: #2f5;
+  -webkit-box-shadow: 0 0 2rem 0.5rem #2f5;
+  box-shadow: 0 0 2rem 0.5rem #2f5;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  margin-left: 1500px;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+.odkaz{
+  min-height: 1rem;
+  position: absolute;
+  z-index: 9999;
+  display: inline-block;
+  cursor: pointer;
+  background: #ccc;
+  color: #111;
+  padding: .75vh 1rem;
+  margin-top: 1.5vh;
+  -webkit-box-shadow: 0 1px 3px 0 #666;
+  box-shadow: 0 1px 3px 0 #666;
+  font-family: Basic, sans-serif;
+  font-size: 20px;
+  color: #1e1610;
+  text-decoration: none;
+}
+.odkaz2{
+  min-height: 1rem;
+  position: absolute;
+  z-index: 9999;
+  display: inline-block;
+  cursor: pointer;
+  background: #ccc;
+  color: #111;
+  padding: .75vh 1rem;
+  -webkit-box-shadow: 0 1px 3px 0 #666;
+  box-shadow: 0 1px 3px 0 #666;
+  font-family: Basic, sans-serif;
+  font-size: 20px;
+  color: #1e1610;
+  text-decoration: none;
+}
